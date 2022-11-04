@@ -16,7 +16,7 @@ setInterval(() => {
 if ('serviceWorker' in navigator) {
 console.log("执行sw 线程")
   navigator.serviceWorker
-    .register('/pwa-examples/a2hs/sw.js')
+    .register('sw.js')
     .then(() => { console.log('Service Worker Registered'); });
 }
 
